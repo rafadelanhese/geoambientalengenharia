@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.5.1.final using JasperReports Library version 6.5.1  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="orcamento" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" isFloatColumnFooter="true" uuid="3bee3642-c3be-4c15-afeb-97b301cd1e41">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
+	<property name="net.sf.jasperreports.print.create.bookmarks" value="true"/>
+	<property name="com.jaspersoft.studio.property.dataset.dialog.DatasetDialog.sash.w1" value="468"/>
+	<property name="com.jaspersoft.studio.property.dataset.dialog.DatasetDialog.sash.w2" value="518"/>
+	<parameter name="IMAGES_DIR" class="java.lang.String"/>
+	<parameter name="CAB_ESQ" class="java.lang.String"/>
+	<parameter name="CAB_DIR" class="java.lang.String"/>
+	<parameter name="PL_SETOR" class="java.lang.String"/>
+	<parameter name="ASSINATURA" class="java.lang.String"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<field name="objetivo" class="java.lang.String"/>
+	<field name="proposta" class="java.lang.String"/>
+	<field name="pessoa.nome" class="java.lang.String"/>
+	<field name="pessoa.endereco.rua" class="java.lang.String"/>
+	<field name="pessoa.endereco.numero" class="java.lang.String"/>
+	<field name="pessoa.endereco.cidade.nome" class="java.lang.String"/>
+	<field name="pessoa.endereco.cidade.estado.sigla" class="java.lang.String"/>
+	<field name="formapagamento" class="java.lang.String"/>
+	<field name="taxaseemolumentos" class="java.lang.String"/>
+	<field name="inicioatividades" class="java.lang.String"/>
+	<field name="validadeproposta" class="java.lang.String"/>
+	<field name="pessoa.setor.descricao" class="java.lang.String"/>
+	<background>
+		<band height="802">
+			<property name="com.jaspersoft.studio.layout" value="com.jaspersoft.studio.editor.layout.spreadsheet.SpreadsheetLayout"/>
+			<image scaleImage="FillFrame" hAlign="Center" vAlign="Bottom">
+				<reportElement positionType="Float" x="-20" y="-20" width="595" height="821" isRemoveLineWhenBlank="true" isPrintWhenDetailOverflows="true" uuid="cb166fda-71ae-4d1d-bb23-3f1fd3f5857a"/>
+				<imageExpression><![CDATA[$P{IMAGES_DIR} + "fundoRelatorio.png"]]></imageExpression>
+			</image>
+		</band>
+	</background>
+	<title>
+		<band height="188" splitType="Stretch">
+			<image hAlign="Center" vAlign="Middle">
+				<reportElement positionType="FixRelativeToBottom" mode="Transparent" x="170" y="14" width="220" height="50" uuid="ae8ce0c7-b8be-4308-a3b5-ebde6775ebb2"/>
+				<imageExpression><![CDATA[$P{IMAGES_DIR} + "logoCabecalho.png"]]></imageExpression>
+			</image>
+			<textField>
+				<reportElement x="0" y="118" width="410" height="60" uuid="dcb008ad-53a0-4a7c-8e01-acbdde6355e7"/>
+				<textFieldExpression><![CDATA["CONTRATANTE" + "\n" +
+$F{pessoa.nome} + "\n" +
+$F{pessoa.endereco.rua}+", "+$F{pessoa.endereco.numero} + "\n" +
+$F{pessoa.endereco.cidade.nome}+" - "+$F{pessoa.endereco.cidade.estado.sigla}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="0" y="0" width="160" height="50" uuid="09e66d46-5373-4bcf-966f-e580b0925ee9"/>
+				<textElement verticalAlignment="Bottom">
+					<font fontName="Arial" size="8"/>
+					<paragraph lineSpacing="1_1_2"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{CAB_ESQ}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="400" y="0" width="154" height="51" uuid="d8690d72-db37-4e1e-b9ce-0aca29d789d7"/>
+				<textElement textAlignment="Right" verticalAlignment="Bottom">
+					<font fontName="Arial" size="8"/>
+					<paragraph lineSpacing="1_1_2"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{CAB_DIR}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="225" y="79" width="110" height="30" uuid="e7e6af17-0e20-46ad-95a3-d2ed4eeb95f5"/>
+				<textElement textAlignment="Center">
+					<font fontName="Arial" size="20" isBold="true" pdfEncoding=""/>
+				</textElement>
+				<text><![CDATA[Orçamento]]></text>
+			</staticText>
+		</band>
+	</title>
+	<detail>
+		<band height="357" splitType="Stretch">
+			<property name="com.jaspersoft.studio.layout" value="com.jaspersoft.studio.editor.layout.FreeLayout"/>
+			<staticText>
+				<reportElement positionType="Float" x="0" y="0" width="555" height="20" uuid="917bf616-7373-4b08-93f7-7f57f79a840d"/>
+				<textElement>
+					<font fontName="Arial" size="12" isBold="true"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<text><![CDATA[1. Objetivo]]></text>
+			</staticText>
+			<textField isStretchWithOverflow="true" evaluationTime="Auto" isBlankWhenNull="true">
+				<reportElement x="0" y="30" width="555" height="20" uuid="6c2b491f-651b-4df9-892e-22912fb2390e"/>
+				<textElement markup="html">
+					<font fontName="Arial" size="12"/>
+					<paragraph lineSpacing="1_1_2" firstLineIndent="0"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{objetivo}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement positionType="Float" x="0" y="60" width="555" height="20" uuid="2d34a2b7-efc7-4ded-8346-61e0f696a6b0"/>
+				<textElement>
+					<font fontName="Arial" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[2. Do Valor Total da Proposta]]></text>
+			</staticText>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement positionType="Float" x="0" y="90" width="555" height="20" uuid="1321a545-22c2-42f9-85ca-60fed7de78ed"/>
+				<textElement markup="html">
+					<font fontName="Arial" size="12"/>
+					<paragraph lineSpacing="1_1_2" firstLineIndent="0"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{proposta}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement positionType="Float" x="0" y="150" width="555" height="20" uuid="19fec92c-abbc-467f-aaab-731e29a3b18b"/>
+				<textElement markup="html">
+					<font fontName="Arial" size="12"/>
+					<paragraph lineSpacing="1_1_2" firstLineIndent="0"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{formapagamento}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement positionType="Float" x="0" y="120" width="555" height="20" uuid="77c04888-6ebb-45d2-bf63-b650d100a2cc"/>
+				<textElement>
+					<font fontName="Arial" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[3. Forma de Pagamento]]></text>
+			</staticText>
+			<staticText>
+				<reportElement positionType="Float" x="0" y="180" width="555" height="20" uuid="cce5fa65-a5a1-4764-89f8-2f700eda4eb5"/>
+				<textElement>
+					<font fontName="Arial" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[4. Taxas e Emolumentos]]></text>
+			</staticText>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement positionType="Float" x="0" y="210" width="555" height="20" uuid="65dad203-c8fe-4a24-a06b-8abcd3afc54e"/>
+				<textElement markup="html">
+					<font fontName="Arial" size="12"/>
+					<paragraph lineSpacing="1_1_2" firstLineIndent="0"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{taxaseemolumentos}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement positionType="Float" x="0" y="241" width="555" height="20" uuid="376cd47b-9035-4fe1-b420-6bb015fd4eac"/>
+				<textElement>
+					<font fontName="Arial" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[5. Início das Atividades]]></text>
+			</staticText>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement positionType="Float" x="0" y="270" width="555" height="20" uuid="cc2f4769-8e82-4c1f-a82d-41fcfa631848"/>
+				<textElement markup="html">
+					<font fontName="Arial" size="12"/>
+					<paragraph lineSpacing="1_1_2" firstLineIndent="0"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{inicioatividades}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement positionType="Float" x="0" y="299" width="555" height="20" uuid="8301a3b7-c3bb-44ac-8426-2c0636db6080"/>
+				<textElement>
+					<font fontName="Arial" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[6. Da Validade da Proposta]]></text>
+			</staticText>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement positionType="Float" x="0" y="328" width="555" height="20" uuid="e8f289c6-a49e-425d-b5f8-f6663421d271"/>
+				<textElement markup="html">
+					<font fontName="Arial" size="12"/>
+					<paragraph lineSpacing="1_1_2" firstLineIndent="0"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{validadeproposta}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<pageFooter>
+		<band height="36" splitType="Stretch">
+			<textField>
+				<reportElement x="460" y="1" width="94" height="30" uuid="ab5fb492-4da6-4249-99f8-7a3cbd826221"/>
+				<textFieldExpression><![CDATA["Página " + $V{PAGE_NUMBER} + " de " + $V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageFooter>
+	<lastPageFooter>
+		<band height="90">
+			<image>
+				<reportElement x="390" y="0" width="139" height="90" uuid="2323e5ec-9b1b-4042-8614-addd42402ec3"/>
+				<imageExpression><![CDATA[ $P{IMAGES_DIR} + $P{ASSINATURA}
+
+]]></imageExpression>
+			</image>
+		</band>
+	</lastPageFooter>
+</jasperReport>

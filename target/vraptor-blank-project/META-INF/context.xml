@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Context antiJARLocking="true" path="/vraptor-blank-project">
+  <Resource auth="Container" driverClassName="com.mysql.jdbc.Driver" maxActive="20" maxIdle="10" maxWait="-1" name="geoambiental" password="106591" type="javax.sql.DataSource" url="jdbc:mysql://localhost:3306/geoambiental?zeroDateTimeBehavior=convertToNull" username="root"/>
+</Context>

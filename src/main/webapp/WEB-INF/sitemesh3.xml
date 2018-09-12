@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sitemesh>
+    <!--PESSOA-->
+    <mapping path="/pessoa/cadastro" decorator="/WEB-INF/jsp/layout/admin.jsp"/> 
+    <mapping path="/pessoa/lista" decorator="/WEB-INF/jsp/layout/admin.jsp"/> 
+    <mapping path="/pessoa/senha" decorator="/WEB-INF/jsp/layout/admin.jsp"/> 
+    <mapping path="/pessoa/visualizar/*" decorator="/WEB-INF/jsp/layout/admin.jsp"/> 
+    
+    <!--SETOR-->
+    <mapping path="/setor/cadastro" decorator="/WEB-INF/jsp/layout/admin.jsp"/> 
+    <mapping path="/setor/lista" decorator="/WEB-INF/jsp/layout/admin.jsp"/> 
+    
+    <!--TIPO USUÁRIO-->
+    <mapping path="/tipousuario/cadastro" decorator="/WEB-INF/jsp/layout/admin.jsp"/> 
+    <mapping path="/tipousuario/lista" decorator="/WEB-INF/jsp/layout/admin.jsp"/> 
+    
+    <!--ATIVIDADE-->
+    <mapping path="/atividade/cadastro" decorator="/WEB-INF/jsp/layout/admin.jsp"/> 
+    <mapping path="/atividade/lista" decorator="/WEB-INF/jsp/layout/admin.jsp"/> 
+    <mapping path="/atividade/tabela" decorator="/WEB-INF/jsp/layout/admin.jsp"/>     
+    
+    <!--PROJETO-->
+    <mapping path="/projeto/lista" decorator="/WEB-INF/jsp/layout/admin.jsp"/> 
+    <mapping path="/projeto/visualizar/*" decorator="/WEB-INF/jsp/layout/admin.jsp"/>
+    <mapping path="/projeto/visualizarCliente/*" decorator="/WEB-INF/jsp/layout/cliente.jsp"/>
+    <mapping path="/projeto/listaCliente" decorator="/WEB-INF/jsp/layout/cliente.jsp"/>  
+    
+    <!--LICENÇA-->
+    <mapping path="/licenca/lista" decorator="/WEB-INF/jsp/layout/admin.jsp"/> 
+    <mapping path="/licenca/visualizar/*" decorator="/WEB-INF/jsp/layout/admin.jsp"/> 
+    <mapping path="/licenca/visualizarCliente/*" decorator="/WEB-INF/jsp/layout/cliente.jsp"/>
+    <mapping path="/licenca/listaCliente" decorator="/WEB-INF/jsp/layout/cliente.jsp"/> 
+    
+    <!--SERVIÇO-->
+    <mapping path="/servico/lista" decorator="/WEB-INF/jsp/layout/admin.jsp"/> 
+    <mapping path="/servico/visualizar/*" decorator="/WEB-INF/jsp/layout/admin.jsp"/> 
+    <mapping path="/servico/visualizarCliente/*" decorator="/WEB-INF/jsp/layout/cliente.jsp"/>
+    <mapping path="/servico/listaCliente" decorator="/WEB-INF/jsp/layout/cliente.jsp"/> 
+    
+    <!--TIPO ORCAMENTO-->
+    <mapping path="/tipoorcamento/cadastro" decorator="/WEB-INF/jsp/layout/admin.jsp"/> 
+    <mapping path="/tipoorcamento/lista" decorator="/WEB-INF/jsp/layout/admin.jsp"/> 
+    
+    <!--TIPO DESPESA-->
+    <mapping path="/tipodespesa/cadastro" decorator="/WEB-INF/jsp/layout/admin.jsp"/> 
+    <mapping path="/tipodespesa/lista" decorator="/WEB-INF/jsp/layout/admin.jsp"/> 
+    
+    <!--PARÂMETRO-->
+    <mapping path="/parametro/cadastro" decorator="/WEB-INF/jsp/layout/admin.jsp"/> 
+    <mapping path="/parametro/lista" decorator="/WEB-INF/jsp/layout/admin.jsp"/> 
+    
+    <!--CONTAS PAGAR-->
+    <mapping path="/contaspagar/gerar" decorator="/WEB-INF/jsp/layout/admin.jsp"/> 
+    <mapping path="/contaspagar/lista" decorator="/WEB-INF/jsp/layout/admin.jsp"/> 
+    <mapping path="/contaspagar/listaparcelas" decorator="/WEB-INF/jsp/layout/admin.jsp"/> 
+    <mapping path="/contaspagar/parcela/*" decorator="/WEB-INF/jsp/layout/admin.jsp"/> 
+    <mapping path="/contaspagar/listaParcelasPagas" decorator="/WEB-INF/jsp/layout/admin.jsp"/> 
+    <mapping path="/contaspagar/visualizar/*" decorator="/WEB-INF/jsp/layout/admin.jsp"/> 
+     
+    <!--CONTAS RECEBER-->
+    <mapping path="/contasreceber/gerar" decorator="/WEB-INF/jsp/layout/admin.jsp"/> 
+    <mapping path="/contasreceber/listaParcelasRecebidas" decorator="/WEB-INF/jsp/layout/admin.jsp"/> 
+    <mapping path="/contasreceber/lancarRecebimento" decorator="/WEB-INF/jsp/layout/admin.jsp"/> 
+    <mapping path="/contasreceber/listaContas" decorator="/WEB-INF/jsp/layout/admin.jsp"/> 
+    <mapping path="/contasreceber/visualizar/*" decorator="/WEB-INF/jsp/layout/admin.jsp"/> 
+    
+    <!--ORÇAMENTO-->
+    <mapping path="/orcamento/gerar" decorator="/WEB-INF/jsp/layout/admin.jsp"/> 
+    <mapping path="/orcamento/lista" decorator="/WEB-INF/jsp/layout/admin.jsp"/> 
+    <mapping path="/orcamento/visualizar/*" decorator="/WEB-INF/jsp/layout/admin.jsp"/> 
+    <mapping path="/orcamento/tabela" decorator="/WEB-INF/jsp/layout/admin.jsp"/> 
+    
+    <!--ITEM-->
+    <mapping path="/item/cadastro" decorator="/WEB-INF/jsp/layout/admin.jsp"/> 
+    <mapping path="/item/lista" decorator="/WEB-INF/jsp/layout/admin.jsp"/> 
+    
+    <!--PAINEL DE CONTROLE-->
+    <mapping path="/painelcontrole/index" decorator="/WEB-INF/jsp/layout/admin.jsp"/> 
+    
+    <!--RELATÓRIO-->
+    <mapping path="/relatorio/index" decorator="/WEB-INF/jsp/layout/admin.jsp"/> 
+    
+    <!--ERROR-->
+    <mapping path="/WEB-INF/error/500.jsp" decorator="/WEB-INF/jsp/layout/admin.jsp"/>     
+</sitemesh>

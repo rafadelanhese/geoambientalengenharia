@@ -1,0 +1,329 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>br.com.caelum</groupId>
+    <artifactId>vraptor-blank-project</artifactId>
+    <version>4.2.1-SNAPSHOT</version>
+    <packaging>war</packaging>
+    
+    <description>A blank project to start using VRaptor 4</description>
+
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <weld.version>2.1.2.Final</weld.version>
+    </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>br.com.caelum</groupId>
+            <artifactId>vraptor</artifactId>
+            <version>4.2.0.Final</version>
+            <exclusions>
+                <exclusion>
+                    <groupId>br.com.caelum.iogi</groupId>
+                    <artifactId>iogi</artifactId>
+                </exclusion>                                                      
+            </exclusions>                  
+        </dependency>                     
+
+        <dependency>
+            <groupId>br.com.caelum</groupId>
+            <artifactId>iogi</artifactId>
+            <version>1.0.0</version>
+            <exclusions>
+                <exclusion>
+                    <groupId>com.google.guava</groupId>
+                    <artifactId>guava</artifactId>                    
+                </exclusion>
+            </exclusions>
+        </dependency>
+
+        <dependency>
+            <groupId>org.jboss.weld.servlet</groupId>
+            <artifactId>weld-servlet-core</artifactId>
+            <version>${weld.version}</version>
+        </dependency>
+		
+        <dependency>
+            <groupId>org.jboss.weld</groupId>
+            <artifactId>weld-core-impl</artifactId>
+            <version>${weld.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>javax.el</groupId>
+            <artifactId>el-api</artifactId>
+            <version>2.2</version>
+            <scope>provided</scope>
+        </dependency>
+		
+        <dependency>
+            <groupId>org.hibernate</groupId>
+            <artifactId>hibernate-validator-cdi</artifactId>
+            <version>5.1.1.Final</version>
+        </dependency>
+
+        <dependency>
+            <groupId>javax.servlet</groupId>
+            <artifactId>jstl</artifactId>
+            <version>1.2</version>
+        </dependency>
+
+        <dependency>
+            <groupId>javax.servlet</groupId>
+            <artifactId>javax.servlet-api</artifactId>
+            <version>3.1.0</version>
+            <scope>provided</scope>
+        </dependency>
+		
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-log4j12</artifactId>
+            <version>1.7.5</version>
+        </dependency>
+        
+        
+        <dependency>
+            <groupId>org.hibernate.javax.persistence</groupId>
+            <artifactId>hibernate-jpa-2.1-api</artifactId>
+            <version>1.0.0.Final</version>
+            <type>jar</type>
+        </dependency>
+       
+        
+        <dependency>
+            <groupId>br.com.caelum.vraptor</groupId>
+            <artifactId>vraptor-jpa</artifactId>
+            <version>4.0.5</version>
+        </dependency>
+        
+        <dependency>
+            <groupId>org.hibernate</groupId>
+            <artifactId>hibernate-entitymanager</artifactId>
+            <version>4.3.1.Final</version>
+        </dependency>
+        
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            <version>6.0.6</version>
+        </dependency>
+        
+        <dependency>
+            <groupId>org.eclipse.persistence</groupId>
+            <artifactId>eclipselink</artifactId>
+            <version>2.5.2</version>
+        </dependency>
+        
+        <dependency>
+            <groupId>org.eclipse.persistence</groupId>
+            <artifactId>org.eclipse.persistence.jpa.modelgen.processor</artifactId>
+            <version>2.5.2</version>
+            <scope>provided</scope>
+        </dependency>
+        
+        <!-- CONVERTER JODATIME -->
+        <dependency>
+            <groupId>br.com.caelum.vraptor</groupId>
+            <artifactId>vraptor-jodatime</artifactId>
+            <version>4.1.0-RC3</version>
+        </dependency>
+        
+        <!-- SITEMESH 3 -->
+        <dependency>
+            <groupId>org.sitemesh</groupId>
+            <artifactId>sitemesh</artifactId>
+            <version>3.0.1</version>
+        </dependency>
+        
+        <!-- Adicionei essa biblioteca depois que aconteceu esse erro: Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.1:compile (default-compile) on project vraptor-blank-project: Fatal error compiling: java.lang.RuntimeException: com.sun.tools.javac.code.Symbol$CompletionFailure: class file for org.jaxen.FunctionContext not found -->
+        <dependency>
+            <groupId>jaxen</groupId>
+            <artifactId>jaxen</artifactId>
+            <version>full</version>
+        </dependency>
+
+        <!--DEPENDENCIA CALENDAR E DATE-->              
+        <dependency>
+            <groupId>joda-time</groupId>
+            <artifactId>joda-time</artifactId>
+            <version>2.9.9</version>
+        </dependency>
+       
+        <!-- https://mvnrepository.com/artifact/joda-time/joda-time-hibernate -->
+        <dependency>
+            <groupId>joda-time</groupId>
+            <artifactId>joda-time-hibernate</artifactId>
+            <version>1.3</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.jadira.usertype</groupId>
+            <artifactId>usertype.core</artifactId>
+            <version>3.1.0.CR1</version>
+        </dependency>                  
+        
+        <!-- Forma fácil de verificar as permissões de acesso das ações de seu controller -->
+        <dependency>
+            <groupId>br.com.caelum.vraptor</groupId>
+            <artifactId>vraptor-brutauth</artifactId>
+            <version>4.0.4</version>
+        </dependency>  
+        
+        <!-- DOWNLOAD E UPLOAD -->  
+        <dependency>
+            <groupId>commons-fileupload</groupId>
+            <artifactId>commons-fileupload</artifactId>
+            <version>1.3.3</version>
+        </dependency>                         
+        <!-- FINAL DOWNLOAD E UPLOAD -->  
+        
+        <!-- FORMATAÇÃO DE DATAS E NÚMEROS --> 
+        <dependency>
+            <groupId>br.com.caelum.vraptor</groupId>
+            <artifactId>vraptor-i18n</artifactId>
+            <version>4.0.1</version> <!-- or latest version -->
+            <scope>compile</scope>
+        </dependency>     
+        <!-- FINAL FORMATAÇÃO DE DATAS E NÚMEROS --> 
+        
+        <!-- ENVIO DE E-MAILS E CONTROLE DE ERROS --> 
+        <dependency>
+            <groupId>br.com.caelum.vraptor</groupId>
+            <artifactId>vraptor-simplemail</artifactId>
+            <version>4.1.0-RC4</version>
+        </dependency>      
+        
+        <dependency>
+            <groupId>br.com.caelum.vraptor</groupId>
+            <artifactId>vraptor-error-control</artifactId>
+            <version>4.0.3</version>
+        </dependency>
+        
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-email</artifactId>
+            <version>1.2</version>
+        </dependency>                                        
+        <!-- FINAL ENVIO DE E-MAILS E CONTROLE DE ERROS -->    
+        
+        <!-- RELATÓRIOS -->  
+        <dependency>
+            <groupId>br.com.prixma</groupId>
+            <artifactId>vraptor-jasperreport</artifactId>
+            <version>4.1.1</version>
+        </dependency>                               
+
+        <!-- POOL DE CONEXÃO --> 
+        <dependency>
+            <groupId>org.hibernate</groupId>
+            <artifactId>hibernate-c3p0</artifactId>
+            <version>5.0.0.CR1</version>
+            <exclusions>
+                <exclusion>
+                    <groupId>c3p0</groupId>
+                    <artifactId>c3p0</artifactId>
+                </exclusion>
+            </exclusions>  
+        </dependency>
+                
+        <dependency>
+            <groupId>com.mchange</groupId>
+            <artifactId>c3p0</artifactId>
+            <version>0.9.2.1</version>
+        </dependency>
+        
+        <dependency>
+            <groupId>com.mchange</groupId>
+            <artifactId>mchange-commons-java</artifactId>
+            <version>0.2.10</version>
+        </dependency>                                                                
+    </dependencies>
+
+    <build>
+        <finalName>vraptor-blank-project</finalName>
+        <outputDirectory>${basedir}/src/main/webapp/WEB-INF/classes</outputDirectory>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.1</version>
+                <configuration>
+                    <source>1.7</source>
+                    <target>1.7</target>
+                </configuration>
+            </plugin>
+
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-war-plugin</artifactId>
+                <version>2.4</version>
+            </plugin>
+
+            <plugin>
+                <groupId>org.apache.tomcat.maven</groupId>
+                <artifactId>tomcat7-maven-plugin</artifactId>
+                <version>2.1</version>
+            </plugin>
+
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-deploy-plugin</artifactId>
+                <version>2.8</version>
+                <configuration>
+                    <skip>true</skip>
+                </configuration>
+            </plugin>
+
+            <plugin>
+                <artifactId>maven-eclipse-plugin</artifactId>
+                <version>2.9</version>
+                <configuration>
+                    <downloadSources>true</downloadSources>
+                    <downloadJavadocs>true</downloadJavadocs>
+                    <wtpversion>2.0</wtpversion>
+                    <ajdtVersion>none</ajdtVersion>
+                </configuration>
+            </plugin>
+
+            <plugin>
+                <artifactId>maven-antrun-plugin</artifactId>
+                <version>1.7</version>
+                <executions>
+                    <execution>
+                        <phase>prepare-package</phase>
+                        <configuration>
+                            <target>
+                                <copy file="${basedir}/pom-dist.xml" todir="${project.build.directory}" />
+                                <replace file="${project.build.directory}/pom-dist.xml" token="VRAPTOR_VERSION_HERE" value="${project.version}" />
+                            </target>
+                        </configuration>
+                        <goals>
+                            <goal>run</goal>
+                        </goals>
+                    </execution>
+                </executions>
+                <!-- REMOVI A VERSÃO DO MAVEN ASSEMBLY E O VRAPTOR JASPER REPORTS FEZ O BUILD, TENHO A VERSÃO DO PLUGIN EM OUTROS BACKUPS -->  
+            </plugin>                          
+        </plugins>
+    </build>
+    <repositories>
+        <repository>
+            <id>unknown-jars-temp-repo</id>
+            <name>A temporary repository created by NetBeans for libraries and jars it could not identify. Please replace the dependencies in this repository with correct ones and delete this repository.</name>
+            <url>file:${project.basedir}/lib</url>
+        </repository> 
+              
+        <repository>
+            <id>sonatype-oss-public</id>
+            <url>https://oss.sonatype.org/content/groups/public/</url>
+            <releases>
+                <enabled>true</enabled>
+            </releases>
+            <snapshots>
+                <enabled>true</enabled>
+            </snapshots>
+        </repository>		                                       
+    </repositories>
+    <name>geoambiental</name>
+</project>
