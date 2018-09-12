@@ -56,7 +56,7 @@
                             <a class="nav-link js-scroll-trigger" href="#contact">Contato</a>
                         </li>
                          <li class="nav-item">
-                            <a class="nav-link js-scroll-trigger" href="#">Área Restrita</a>
+                            <a class="nav-link js-scroll-trigger" href="${linkTo[LoginController].index}">Área Restrita</a>
                         </li>
                     </ul>
                 </div>
@@ -83,11 +83,7 @@
                     </div>
                 </div>
                 <div class="row text-center">
-                    <div class="col-md-4">
-                        <span class="fa-stack fa-4x">
-                            <i class="fas fa-circle fa-stack-2x text-primary">dff</i>
-                            <i class="fas fa-shopping-cart fa-stack-1x fa-inverse">dasdsa</i>
-                        </span>
+                    <div class="col-md-4">                       
                         <h4 class="service-heading">Soluções Ambientais</h4>
                         <p class="text-muted">Assessoria, outorgas, licenciamento ambiental, gerenciamento de resíduos, tratamentos de efluentesm EIA/RIMA e outros.</p>
                     </div>
@@ -154,7 +150,7 @@
                                     <i class="fas fa-plus fa-3x"></i>
                                 </div>
                             </div>
-                            <img class="img-fluid" src="${pageContext.request.contextPath}/site/img/portfolio/01-thumbnail.jpg" alt="">
+                            <img class="img-fluid" src="${pageContext.request.contextPath}/site/img/portfolio/ipiranga-thumbnail.jpg" alt="">
                         </a>
                         <div class="portfolio-caption">
                             <h4>Ipiranga</h4>
@@ -168,7 +164,7 @@
                                     <i class="fas fa-plus fa-3x"></i>
                                 </div>
                             </div>
-                            <img class="img-fluid" src="${pageContext.request.contextPath}/site/img/portfolio/02-thumbnail.jpg" alt="">
+                            <img class="img-fluid" src="${pageContext.request.contextPath}/site/img/portfolio/tratamentoefluentes-thumbnail.jpg" alt="">
                         </a>
                         <div class="portfolio-caption">
                             <h4>Geoambiental</h4>
@@ -182,7 +178,7 @@
                                     <i class="fas fa-plus fa-3x"></i>
                                 </div>
                             </div>
-                            <img class="img-fluid" src="${pageContext.request.contextPath}/site/img/portfolio/03-thumbnail.jpg" alt="">
+                            <img class="img-fluid" src="${pageContext.request.contextPath}/site/img/portfolio/tenisclube-thumbnail.jpg" alt="">
                         </a>
                         <div class="portfolio-caption">
                             <h4>Tênis Clube Presidente Prudente</h4>
@@ -196,7 +192,7 @@
                                     <i class="fas fa-plus fa-3x"></i>
                                 </div>
                             </div>
-                            <img class="img-fluid" src="${pageContext.request.contextPath}/site/img/portfolio/04-thumbnail.jpg" alt="">
+                            <img class="img-fluid" src="${pageContext.request.contextPath}/site/img/portfolio/cartonagemfernandez-thumbnail.jpg" alt="">
                         </a>
                         <div class="portfolio-caption">
                             <h4>Cartonagem Fernandez</h4>
@@ -210,7 +206,7 @@
                                     <i class="fas fa-plus fa-3x"></i>
                                 </div>
                             </div>
-                            <img class="img-fluid" src="${pageContext.request.contextPath}/site/img/portfolio/05-thumbnail.jpg" alt="">
+                            <img class="img-fluid" src="${pageContext.request.contextPath}/site/img/portfolio/supergasbras-thumbnail.jpg" alt="">
                         </a>
                         <div class="portfolio-caption">
                             <h4>SuperGasbras</h4>
@@ -224,7 +220,7 @@
                                     <i class="fas fa-plus fa-3x"></i>
                                 </div>
                             </div>
-                            <img class="img-fluid" src="${pageContext.request.contextPath}/site/img/portfolio/06-thumbnail.jpg" alt="">
+                            <img class="img-fluid" src="${pageContext.request.contextPath}/site/img/portfolio/mastercountry-thumbnail.jpg" alt="">
                         </a>
                         <div class="portfolio-caption">
                             <h4>Master Country Fivelas</h4>
@@ -238,7 +234,7 @@
                                     <i class="fas fa-plus fa-3x"></i>
                                 </div>
                             </div>
-                            <img class="img-fluid" src="${pageContext.request.contextPath}/site/img/portfolio/06-thumbnail.jpg" alt="">
+                            <img class="img-fluid" src="${pageContext.request.contextPath}/site/img/portfolio/multibrasil-thumbnail.jpg" alt="">
                         </a>
                         <div class="portfolio-caption">
                             <h4>Multibrasil Sementes</h4>
@@ -252,7 +248,7 @@
                                     <i class="fas fa-plus fa-3x"></i>
                                 </div>
                             </div>
-                            <img class="img-fluid" src="${pageContext.request.contextPath}/site/img/portfolio/06-thumbnail.jpg" alt="">
+                            <img class="img-fluid" src="${pageContext.request.contextPath}/site/img/portfolio/hospitalbernardes-thumbnail.jpg" alt="">
                         </a>
                         <div class="portfolio-caption">
                             <h4>Hospital de Presidente Bernardes</h4>
@@ -266,7 +262,7 @@
                                     <i class="fas fa-plus fa-3x"></i>
                                 </div>
                             </div>
-                            <img class="img-fluid" src="${pageContext.request.contextPath}/site/img/portfolio/06-thumbnail.jpg" alt="">
+                            <img class="img-fluid" src="${pageContext.request.contextPath}/site/img/portfolio/prefeituranarandiba-thumbnail.jpg" alt="">
                         </a>
                         <div class="portfolio-caption">
                             <h4>Prfeeitura Municipal de Narandiba</h4>
@@ -280,7 +276,7 @@
                                     <i class="fas fa-plus fa-3x"></i>
                                 </div>
                             </div>
-                            <img class="img-fluid" src="${pageContext.request.contextPath}/site/img/portfolio/06-thumbnail.jpg" alt="">
+                            <img class="img-fluid" src="${pageContext.request.contextPath}/site/img/portfolio/unoeste-thumbnail.jpg" alt="">
                         </a>
                         <div class="portfolio-caption">
                             <h4>Unoeste</h4>
@@ -294,11 +290,11 @@
                                     <i class="fas fa-plus fa-3x"></i>
                                 </div>
                             </div>
-                            <img class="img-fluid" src="${pageContext.request.contextPath}/site/img/portfolio/06-thumbnail.jpg" alt="">
+                            <img class="img-fluid" src="${pageContext.request.contextPath}/site/img/portfolio/pulverizacao-thumbnail.jpg" alt="">
                         </a>
                         <div class="portfolio-caption">
                             <h4>Perícia Ambiental</h4>
-                            <p class="text-muted">AAAAA</p>
+                            <p class="text-muted">Deriva de pulverização aérea</p>
                         </div>
                     </div> 
                     <div class="col-md-4 col-sm-6 portfolio-item">
@@ -308,7 +304,7 @@
                                     <i class="fas fa-plus fa-3x"></i>
                                 </div>
                             </div>
-                            <img class="img-fluid" src="${pageContext.request.contextPath}/site/img/portfolio/06-thumbnail.jpg" alt="">
+                            <img class="img-fluid" src="${pageContext.request.contextPath}/site/img/portfolio/energisa-thumbnail.jpg" alt="">
                         </a>
                         <div class="portfolio-caption">
                             <h4>Energisa</h4>
@@ -322,7 +318,7 @@
                                     <i class="fas fa-plus fa-3x"></i>
                                 </div>
                             </div>
-                            <img class="img-fluid" src="${pageContext.request.contextPath}/site/img/portfolio/06-thumbnail.jpg" alt="">
+                            <img class="img-fluid" src="${pageContext.request.contextPath}/site/img/portfolio/martville-thumbnail.jpg" alt="">
                         </a>
                         <div class="portfolio-caption">
                             <h4>Residencial Martville</h4>
@@ -336,7 +332,7 @@
                                     <i class="fas fa-plus fa-3x"></i>
                                 </div>
                             </div>
-                            <img class="img-fluid" src="${pageContext.request.contextPath}/site/img/portfolio/06-thumbnail.jpg" alt="">
+                            <img class="img-fluid" src="${pageContext.request.contextPath}/site/img/portfolio/oasis-thumbnail.jpg" alt="">
                         </a>
                         <div class="portfolio-caption">
                             <h4>Condomínio Oásis do Paranapanema</h4>
@@ -350,7 +346,7 @@
                                     <i class="fas fa-plus fa-3x"></i>
                                 </div>
                             </div>
-                            <img class="img-fluid" src="${pageContext.request.contextPath}/site/img/portfolio/06-thumbnail.jpg" alt="">
+                            <img class="img-fluid" src="${pageContext.request.contextPath}/site/img/portfolio/residuos-thumbnail.jpg" alt="">
                         </a>
                         <div class="portfolio-caption">
                             <h4>Gerenciamento de Resíduos</h4>
@@ -364,7 +360,7 @@
                                     <i class="fas fa-plus fa-3x"></i>
                                 </div>
                             </div>
-                            <img class="img-fluid" src="${pageContext.request.contextPath}/site/img/portfolio/06-thumbnail.jpg" alt="">
+                            <img class="img-fluid" src="${pageContext.request.contextPath}/site/img/portfolio/car-thumbnail.jpg" alt="">
                         </a>
                         <div class="portfolio-caption">
                             <h4>Cadastro Ambiental Rural</h4>
@@ -378,7 +374,7 @@
                                     <i class="fas fa-plus fa-3x"></i>
                                 </div>
                             </div>
-                            <img class="img-fluid" src="${pageContext.request.contextPath}/site/img/portfolio/06-thumbnail.jpg" alt="">
+                            <img class="img-fluid" src="${pageContext.request.contextPath}/site/img/portfolio/reflorestamento-thumbnail.jpg" alt="">
                         </a>
                         <div class="portfolio-caption">
                             <h4>Projetos de Reflorestamento</h4>
@@ -392,7 +388,7 @@
                                     <i class="fas fa-plus fa-3x"></i>
                                 </div>
                             </div>
-                            <img class="img-fluid" src="${pageContext.request.contextPath}/site/img/portfolio/06-thumbnail.jpg" alt="">
+                            <img class="img-fluid" src="${pageContext.request.contextPath}/site/img/portfolio/incendioflorestal-thumbnail.jpg" alt="">
                         </a>
                         <div class="portfolio-caption">
                             <h4>Perícia Ambiental</h4>

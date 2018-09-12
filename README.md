@@ -2,4 +2,4 @@
 Projeto de conclusão de graduação em Sistemas de Informação pela Universidade do Oeste Paulista (Unoeste).
 
 # Descrição
-O projeto foi desenvolvido para web utilizando Java de linguagem back-end, Vraptor para o usu do padrão do MVC, JPA, Rest.
+O projeto foi desenvolvido para web utilizando Java de linguagem back-end, Vraptor para o uso do padrão do MVC, JPA, Rest.
