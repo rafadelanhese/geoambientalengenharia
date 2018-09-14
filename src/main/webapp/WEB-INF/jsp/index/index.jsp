@@ -56,7 +56,7 @@
                             <a class="nav-link js-scroll-trigger" href="#contact">Contato</a>
                         </li>
                          <li class="nav-item">
-                            <a class="nav-link js-scroll-trigger" href="${linkTo[LoginController].index}">Área Restrita</a>
+                            <a class="nav-link js-scroll-trigger" href="${linkTo[LoginController].index}">Área Restrita teste</a>
                         </li>
                     </ul>
                 </div>
