@@ -19,7 +19,6 @@ br\com\geoambientalengenharia\DAO\ContasPagarDAO.class
 br\com\geoambientalengenharia\Controller\ProjetoController.class
 br\com\geoambientalengenharia\File\Arquivo.class
 br\com\geoambientalengenharia\Model\Setor_.class
-br\com\geoambientalengenharia\Reports\OrcamentoReport.class
 br\com\geoambientalengenharia\Model\Pessoa.class
 br\com\geoambientalengenharia\Model\Servico.class
 br\com\geoambientalengenharia\Model\Documento_.class

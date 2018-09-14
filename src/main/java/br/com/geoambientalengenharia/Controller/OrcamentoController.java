@@ -11,9 +11,6 @@ import br.com.caelum.vraptor.Get;
 import br.com.caelum.vraptor.Path;
 import br.com.caelum.vraptor.Post;
 import br.com.caelum.vraptor.Result;
-import br.com.caelum.vraptor.jasperreports.Report;
-import br.com.caelum.vraptor.jasperreports.download.ReportDownload;
-import br.com.caelum.vraptor.jasperreports.formats.ExportFormats;
 import br.com.caelum.vraptor.observer.download.Download;
 import br.com.caelum.vraptor.validator.SimpleMessage;
 import br.com.caelum.vraptor.validator.Validator;
@@ -33,7 +30,6 @@ import br.com.geoambientalengenharia.Model.Item;
 import br.com.geoambientalengenharia.Model.Orcamento;
 import br.com.geoambientalengenharia.Model.OrcamentoItem;
 import br.com.geoambientalengenharia.Model.Parametro;
-import br.com.geoambientalengenharia.Reports.OrcamentoReport;
 import br.com.geoambientalengenharia.Sessao.ItensSessao;
 import static com.google.common.base.Strings.isNullOrEmpty;
 import java.math.BigDecimal;
@@ -231,32 +227,5 @@ public class OrcamentoController {
         validation.addIf(new BigDecimal(valor).compareTo(BigDecimal.ZERO) == 0, new SimpleMessage("valor", "Valor inválido, insira um valor maior que zero"));
         itensSessao.atualiza(posicao, quantidade, new BigDecimal(valor));
         result.redirectTo(this).tabelaItens();
-    }
-
-    @Path("/imprimirOrcamento/{idOrcamento}")
-    public Download imprimirOrcamento(Long idOrcamento) {
-        Parametro param = paramDao.findById(1L);
-        List<Orcamento> listOrcamento = new ArrayList<>();
-        listOrcamento.add(orcamentoDao.findById(idOrcamento));
-        Report report = new OrcamentoReport(listOrcamento);
-        report.addParameter("CAB_ESQ", param.getCabecalhoEsquedo());
-        if (!isNullOrEmpty(usuarioLogado.getUserLogado().getTelefone().get(1).getTelefone())) {
-            report.addParameter("CAB_DIR", param.getCabecalhoDireito(usuarioLogado.getUserLogado().getTelefone().get(1).getTelefone()));
-        } else {
-            report.addParameter("CAB_DIR", param.getCabecalhoDireito(""));
-        }
-        switch (usuarioLogado.getUserLogado().getSetor().getDescricao()) {
-            case "Engenharia Ambiental":
-                report.addParameter("ASSINATURA", "assinaturaRodrigo.png");
-                break;
-            case "Engenharia Civil":
-                report.addParameter("ASSINATURA", "assinaturaMatheus.png");
-                break;
-            case "Arquitetura":
-                report.addParameter("ASSINATURA", "assinaturaMarcela.png");
-                break;
-        }
-
-        return new ReportDownload(report, ExportFormats.pdf(), false);
     }
 }
