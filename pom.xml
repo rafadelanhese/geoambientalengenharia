@@ -205,14 +205,7 @@
             <artifactId>commons-email</artifactId>
             <version>1.2</version>
         </dependency>                                        
-        <!-- FINAL ENVIO DE E-MAILS E CONTROLE DE ERROS -->    
-        
-        <!-- RELATÓRIOS -->  
-        <dependency>
-            <groupId>br.com.prixma</groupId>
-            <artifactId>vraptor-jasperreport</artifactId>
-            <version>4.1.1</version>
-        </dependency>                               
+        <!-- FINAL ENVIO DE E-MAILS E CONTROLE DE ERROS -->                                          
 
         <!-- POOL DE CONEXÃO --> 
         <dependency>
