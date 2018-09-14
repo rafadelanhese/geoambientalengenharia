@@ -22,7 +22,7 @@ a:hover {
 }
 
 .text-primary {
-  color: #fed136 !important;
+  color: #005cbc !important;
 }
 
 h1,
@@ -623,7 +623,7 @@ section#contact .form-group textarea.form-control {
 }
 
 section#contact .form-control:focus {
-  border-color: #fed136;
+  border-color: #005cbc;
   -webkit-box-shadow: none;
   box-shadow: none;
 }
