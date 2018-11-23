@@ -6,6 +6,8 @@
 package br.com.geoambientalengenharia.Model;
 
 import java.io.Serializable;
+import java.util.ArrayList;
+import java.util.List;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -21,11 +23,10 @@ import javax.validation.constraints.NotNull;
 @Entity
 public class Cidade implements Serializable {
 
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Id  
     private Long idCidade;
     private String nome;
-    
+
     @NotNull(message = "{endereco.cidade.estado.vazio}")
     @ManyToOne
     @JoinColumn(name = "idEstado")
@@ -34,6 +35,10 @@ public class Cidade implements Serializable {
     public Cidade() {
     }
 
+    public Cidade(Long idCidade) {
+        this.idCidade = idCidade;
+    }
+    
     public Cidade(Long idCidade, String nome, Estado estado) {
         this.idCidade = idCidade;
         this.nome = nome;
@@ -67,7 +72,6 @@ public class Cidade implements Serializable {
 
     public void setEstado(Estado estado) {
         this.estado = estado;
-    }
-    
-    
+    }   
+
 }

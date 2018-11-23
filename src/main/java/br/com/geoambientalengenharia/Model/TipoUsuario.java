@@ -33,6 +33,10 @@ public class TipoUsuario implements Serializable {
     public TipoUsuario() {
     }
 
+    public TipoUsuario(Long idTipoUsuario) {
+        this.idTipoUsuario = idTipoUsuario;
+    }
+    
     public TipoUsuario(Long idTipoUsuario, String descricao) {
         this.idTipoUsuario = idTipoUsuario;
         this.descricao = descricao;

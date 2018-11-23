@@ -33,6 +33,10 @@ public class Setor implements Serializable{
     public Setor() {
     }
 
+    public Setor(Long idSetor) {
+        this.idSetor = idSetor;
+    }   
+    
     public Setor(Long idSetor, String descricao) {
         this.idSetor = idSetor;
         this.descricao = descricao;

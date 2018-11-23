@@ -52,7 +52,6 @@ br\com\geoambientalengenharia\Controller\RelatorioController.class
 br\com\geoambientalengenharia\DAO\OrcamentoItemDAO.class
 br\com\geoambientalengenharia\Model\AtividadeItem.class
 br\com\geoambientalengenharia\DAO\PessoaDAO.class
-br\com\geoambientalengenharia\Controller\LayoutController.class
 br\com\geoambientalengenharia\Controller\LicencaController.class
 br\com\geoambientalengenharia\Model\Atividade.class
 br\com\geoambientalengenharia\DAO\EstadoDAO.class

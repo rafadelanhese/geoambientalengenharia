@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <project name="maven-antrun-" default="main"  >
 <target name="main">
-  <copy file="c:\Users\Rafael Delanhese\Documents\Geoambiental\CORRETO\vraptor-blank-project/pom-dist.xml" todir="c:\Users\Rafael Delanhese\Documents\Geoambiental\CORRETO\vraptor-blank-project\target"/>
-  <replace file="c:\Users\Rafael Delanhese\Documents\Geoambiental\CORRETO\vraptor-blank-project\target/pom-dist.xml" value="4.2.1-SNAPSHOT" token="VRAPTOR_VERSION_HERE"/>
+  <copy file="C:\Users\Rafael Delanhese\Documents\Geoambiental\CORRETO\vraptor-blank-project/pom-dist.xml" todir="C:\Users\Rafael Delanhese\Documents\Geoambiental\CORRETO\vraptor-blank-project\target"/>
+  <replace file="C:\Users\Rafael Delanhese\Documents\Geoambiental\CORRETO\vraptor-blank-project\target/pom-dist.xml" value="4.2.1-SNAPSHOT" token="VRAPTOR_VERSION_HERE"/>
 </target>
 </project>

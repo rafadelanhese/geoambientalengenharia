@@ -44,16 +44,16 @@
                     <i class="fas fa-bars"></i>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
-                    <ul class="navbar-nav text-uppercase ml-auto">
-                        <li class="nav-item">
-                            <a class="nav-link js-scroll-trigger" href="#services">Sobre Nós</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link js-scroll-trigger" href="#portfolio">Portfólio</a>
-                        </li>
+                    <ul class="navbar-nav text-uppercase ml-auto">                       
                         <li class="nav-item">
                             <a class="nav-link js-scroll-trigger" href="#servicos">Serviços</a>
                         </li>
+                        <li class="nav-item">
+                            <a class="nav-link js-scroll-trigger" href="#portfolio">Portfólio</a>
+                        </li>  
+                        <li class="nav-item">
+                            <a class="nav-link js-scroll-trigger" href="#sobre">Sobre</a>
+                        </li>  
                         <li class="nav-item">
                             <a class="nav-link js-scroll-trigger" href="#contact">Contato</a>
                         </li>
@@ -98,7 +98,7 @@
                     <div class="col-md-4">
                         <span class="fa-stack fa-4x">
                             <i class="fas fa-circle fa-stack-2x text-primary"></i>
-                            <i class="fas fa-laptop fa-stack-1x fa-inverse"></i>
+                            <i class="fas fa-plus fa-stack-1x fa-inverse"></i>
                         </span>
                         <h4 class="service-heading">Geotecnologias</h4>
                         <p class="text-muted">Mapas temáticos em softwares de informações geográficas em imagens de
@@ -107,18 +107,26 @@
                     <div class="col-md-4">
                         <span class="fa-stack fa-4x">
                             <i class="fas fa-circle fa-stack-2x text-primary"></i>
-                            <i class="fas fa-twitter fa-stack-1x fa-inverse"></i>
+                            <i class="fas fa-plus fa-stack-1x fa-inverse"></i>
                         </span>
-                        <h4 class="service-heading">Arquitetura e urbanismo</h4>
+                        <h4 class="service-heading">Arquitetura e Urbanismo</h4>
                         <p class="text-muted">Elaboração de projetos arquitetônicos comerciais, residenciaism clínicas,
                             urbanismo e modelagem 3D</p>
                     </div>
-                </div>
+                </div>                
                 <div class="row text-center">
                     <div class="col-md-4">
                         <span class="fa-stack fa-4x">
                             <i class="fas fa-circle fa-stack-2x text-primary"></i>
-                            <i class="fas fa-shopping-cart fa-stack-1x fa-inverse"></i>
+                            <i class="fas fa-plus fa-stack-1x fa-inverse"></i>
+                        </span>
+                        <h4 class="service-heading">Engenharia Civil</h4>
+                        <p class="text-muted">Cálculo estrutural, acompanhamento e administração de obras, regularização e desdobro de área</p>
+                    </div>
+                    <div class="col-md-4">
+                        <span class="fa-stack fa-4x">
+                            <i class="fas fa-circle fa-stack-2x text-primary"></i>
+                            <i class="fas fa-plus fa-stack-1x fa-inverse"></i>
                         </span>
                         <h4 class="service-heading">Perícia ambiental</h4>
                         <p class="text-muted">Acompanhamento técnico, laudos técnicos ambientais.</p>
@@ -126,21 +134,12 @@
                     <div class="col-md-4">
                         <span class="fa-stack fa-4x">
                             <i class="fas fa-circle fa-stack-2x text-primary"></i>
-                            <i class="fas fa-laptop fa-stack-1x fa-inverse"></i>
+                            <i class="fas fa-plus fa-stack-1x fa-inverse"></i>
                         </span>
                         <h4 class="service-heading">Topografia e Agrimenssura</h4>
                         <p class="text-muted">Levantamento planialtimétrico, georreferenciamento de imóveis rurais,
                             desmembramento, retificação de matrículas de imóveis.</p>
-                    </div>
-                    <div class="col-md-4">
-                        <span class="fa-stack fa-4x">
-                            <i class="fas fa-circle fa-stack-2x text-primary"></i>
-                            <i class="fas fa-lock fa-stack-1x fa-inverse"></i>
-                        </span>
-                        <h4 class="service-heading">Arquitetura e urbanismo</h4>
-                        <p class="text-muted">Elaboração de projetos arquitetônicos comerciais, residenciaism clínicas,
-                            urbanismo e modelagem 3D</p>
-                    </div>
+                    </div>                   
                 </div>
             </div>
         </section>
@@ -321,7 +320,7 @@
                         </div>
                     </div>
                     <div class="col-md-4 col-sm-6 portfolio-item">
-                        <a class="portfolio-link" data-toggle="modal" href="#modalMatville">
+                        <a class="portfolio-link" data-toggle="modal" href="#modalMartville">
                             <div class="portfolio-hover">
                                 <div class="portfolio-hover-content">
                                     <i class="fas fa-plus fa-3x"></i>
@@ -446,6 +445,73 @@
             </div>
         </section>       
 
+        <!-- About -->
+        <section id="sobre">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 text-center">
+                        <h2 class="section-heading text-uppercase">Sobre nós</h2>
+                        <h3 class="section-subheading text-muted">Um pouco sobre a nossa história.</h3>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <ul class="timeline">
+                            <li>
+                                <div class="timeline-image">
+                                    <img class="rounded-circle img-fluid" src="img/about/2.jpg" alt="">
+                                </div>
+                                <div class="timeline-panel">
+                                    <div class="timeline-heading">                                        
+                                        <h4 class="subheading">Nossa história</h4>
+                                    </div>
+                                    <div class="timeline-body">
+                                        <p class="text-muted">A Geoambiental Engenharia foi idealizada para oferecer o melhor serviço de engenharia ambiental, civil, arquitetura e topografia,
+                                            reunindo um corpo técnico de vasta experiência no mercado de trabalho para garantir excelência e qualidade nos serviços prestados.</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="timeline-inverted">
+                                <div class="timeline-image">
+                                    <img class="rounded-circle img-fluid" src="img/about/2.jpg" alt="">
+                                </div>
+                                <div class="timeline-panel">
+                                    <div class="timeline-heading">                                        
+                                        <h4 class="subheading">Onde nos localizar</h4>
+                                    </div>
+                                    <div class="timeline-body">
+                                        <p class="text-muted">Av. João Gonçalves Foz, 1969A,
+                                            Bairro Jardim das Rosas - Presidente Prudente/SP</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="timeline-image">
+                                    <img class="rounded-circle img-fluid" src="img/about/2.jpg" alt="">
+                                </div>
+                                <div class="timeline-panel">
+                                    <div class="timeline-heading">                                        
+                                        <h4 class="subheading">Contato</h4>
+                                    </div>
+                                    <div class="timeline-body">
+                                        <p class="text-muted">18 3203 3759 | 18 99625 7647 (Eng. Rodrigo)</p>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li class="timeline-inverted">
+                                <div class="timeline-image">
+                                    <h4>Venha fazer
+                                        <br>Parte da nossa
+                                        <br>História!</h4>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <!-- Contact -->
         <section id="contact">
             <div class="container">
@@ -457,28 +523,28 @@
                 </div>
                 <div class="row">
                     <div class="col-lg-12">
-                        <form id="contactForm" name="sentMessage" novalidate="novalidate">
+                        <form action="${linkTo[IndexController].emailContato}" method="POST">
                             <div class="row">
                                 <div class="col-md-6">
                                     <div class="form-group">
-                                        <input class="form-control" id="name" type="text" placeholder="Nome" required="required"
+                                        <input class="form-control" id="nome" name="nome" type="text" placeholder="Nome" required="required"
                                                data-validation-required-message="Por favor insira seu nome.">
                                         <p class="help-block text-danger"></p>
                                     </div>
                                     <div class="form-group">
-                                        <input class="form-control" id="email" type="email" placeholder="E-mail" required="required"
+                                        <input class="form-control" id="email" name="emailCliente" type="email" placeholder="E-mail" required="required"
                                                data-validation-required-message="Por favor insira seu e-mail.">
                                         <p class="help-block text-danger"></p>
                                     </div>
                                     <div class="form-group">
-                                        <input class="form-control" id="phone" type="tel" placeholder="Celular" required="required"
+                                        <input class="form-control" id="telefone" name="telefone" type="tel" placeholder="Celular" required="required"
                                                data-validation-required-message="Por favor insira seu celular.">
                                         <p class="help-block text-danger"></p>
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-group">
-                                        <textarea class="form-control" id="message" placeholder="Digite sua mensagem"
+                                        <textarea class="form-control" id="mensagem" name="mensagem" placeholder="Digite sua mensagem"
                                                   required="required" data-validation-required-message="Por favor escreva uma mensagem."></textarea>
                                         <p class="help-block text-danger"></p>
                                     </div>
@@ -486,7 +552,7 @@
                                 <div class="clearfix"></div>
                                 <div class="col-lg-12 text-center">
                                     <div id="success"></div>
-                                    <button id="sendMessageButton" class="btn btn-primary btn-xl text-uppercase" type="submit">Enviar</button>
+                                    <button class="btn btn-primary btn-xl text-uppercase" type="submit">Enviar</button>
                                 </div>
                             </div>
                         </form>
@@ -503,22 +569,12 @@
                         <span class="copyright">Copyright &copy; Geoambiental Engenharia</span>
                     </div>
                     <div class="col-md-4">
-                        <ul class="list-inline social-buttons">
+                        <ul class="list-inline social-buttons">                          
                             <li class="list-inline-item">
-                                <a href="#">
-                                    <i class="fab fa-twitter"></i>
-                                </a>
-                            </li>
-                            <li class="list-inline-item">
-                                <a href="#">
+                                <a href="https://www.facebook.com/geoambientalengenharia" target="blank">
                                     <i class="fab fa-facebook-f"></i>
                                 </a>
-                            </li>
-                            <li class="list-inline-item">
-                                <a href="#">
-                                    <i class="fab fa-linkedin-in"></i>
-                                </a>
-                            </li>
+                            </li>                           
                         </ul>
                     </div>
                     <div class="col-md-4">
